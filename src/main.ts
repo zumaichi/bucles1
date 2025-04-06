@@ -120,8 +120,9 @@ const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
       pacientes[i].temperatura > 39
     ) {
       activarProctolo = true;
+      break;
     }
-    break;
+    
   }
   return activarProctolo;
 };
