@@ -121,6 +121,7 @@ const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
     ) {
       activarProctolo = true;
     }
+    break;
   }
   return activarProctolo;
 };
@@ -143,7 +144,9 @@ const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
   for (let i = 0; i < pacientes.length; i++) {
     if (pacientes[i].especialidad === "Pediatra") {
       sinPacientesPediatra = false;
+      break;
     }
+   
   }
   return sinPacientesPediatra;
 };
